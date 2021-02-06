@@ -1,0 +1,106 @@
+body{
+    background-color:hsl(210, 46%, 95%) ;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+.main{
+    max-width:1440px;
+    height:700px;
+    margin:0 auto 0 auto;
+}
+.container{
+    max-width:1200px ; 
+    height:700px;   
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:50px;
+    
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows:300px 300px;
+    grid-gap:30px;
+    grid-template-areas: "daniel daniel  jonathan kira"
+                        "Jeanette patrick patrick kira"
+}
+p{
+    font-size: 13px;
+    opacity: 70%;
+    line-height: 20px;
+    word-spacing: 0.5px;
+}
+img{
+    border-radius: 50%;
+}
+#heading{
+font-weight:600;
+font-size:20px;
+line-height: 25px;
+
+}
+#verified{
+    opacity:50%;
+
+}
+
+.intro{
+    font-size: 14px;
+    font-weight: 600;
+    width:120px;
+    margin-top:-50px;
+    margin-left:70px;
+    margin-bottom:25px;
+}
+
+.daniel{ 
+    background-color: hsl(263, 55%, 52%);
+    grid-area:daniel;
+    border-radius: 10px;
+    padding:20px 30px;
+  
+    color:rgb(228, 227, 227);
+    box-shadow:0 0 20px  rgba(24, 23, 23,0.6) ;
+}
+.jonathane{
+    background-color:hsl(217, 19%, 35%);
+    grid-area:jonathan;
+    border-radius: 10px;
+    padding: 20px 30px;
+    /* color:white; */
+    color:rgb(228, 227, 227);
+    box-shadow:0 0 20px  rgba(24, 23, 23,0.6) ;
+}
+.kira{
+    background-color:white ;
+    grid-area:kira;
+    border-radius: 10px;
+    padding:20px  30px;
+    color:black;
+    box-shadow:0 0 20px  rgba(24, 23, 23,0.6) ;
+}
+.Jeanette{
+    background-color:white ;
+    grid-area:Jeanette;
+    border-radius: 10px;
+    padding:20px 30px;
+    color:black;
+    box-shadow:0 0 20px  rgba(24, 23, 23,0.6) ;
+}
+.patrick{
+    background-color:hsl(219, 29%, 14%) ;
+    grid-area:patrick;
+    border-radius: 10px;
+    padding:20px  30px;
+    /* color:white; */
+    color:rgb(228, 227, 227);
+    box-shadow:0 0 20px  rgba(24, 23, 23,0.6) ;
+} 
+
+
+@media(max-width:1200px){
+
+    .container{
+      display:flex;
+      flex-direction: column;
+    }
+    
+}
